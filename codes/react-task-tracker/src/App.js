@@ -1,0 +1,13 @@
+function App() {
+  const name = "Yehezkel";
+  const x = true;
+  return (
+    <div className="container">
+      <h1>Hello From React</h1>
+      <h2>Hello {name}</h2>
+      <p>{x ? "Yes" : "No"}</p>
+    </div>
+  );
+}
+
+export default App;
