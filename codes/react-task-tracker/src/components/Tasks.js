@@ -12,7 +12,7 @@ const tasks = [
     reminder: true,
   },
   {
-    id: 2,
+    id: 3,
     text: "Food Shopping",
     day: "Feb 5th at 2:30pm",
     reminder: false,
@@ -20,7 +20,13 @@ const tasks = [
 ];
 
 const Tasks = () => {
-  return <div>Tasks</div>;
+  return (
+    <>
+      {tasks.map((task) => (
+        <h3 key={task.id}>{task.text}</h3>
+      ))}
+    </>
+  );
 };
 
 export default Tasks;
